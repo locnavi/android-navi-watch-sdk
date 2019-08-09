@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/ipsmap_white"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/iv_map"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:src="@drawable/ipsmap_img_default" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ipsmap_tool_de"
+        android:textColor="@color/ipsmap_tvBlack11"
+        android:layout_toRightOf="@+id/iv_map"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layout_marginRight="@dimen/ipsmap_margin" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ipsmap_colorDivider" />
+</RelativeLayout>

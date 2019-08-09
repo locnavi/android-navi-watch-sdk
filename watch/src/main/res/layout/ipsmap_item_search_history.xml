@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/ipsmap_border_white4">
+
+    <ImageView
+        android:id="@+id/iv_history"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ipsmap_search_history" />
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ipsmap_close" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="16sp"
+        android:textColor="@color/ipsmap_tvBlack3"
+        android:layout_toRightOf="@+id/iv_history"
+        android:layout_toLeftOf="@+id/iv_close"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" />
+</RelativeLayout>

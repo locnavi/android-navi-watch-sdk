@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_map_district"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:background="@drawable/ipsmap_border_white3"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="45dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/ipsmap_hospital"
+            android:textColor="@color/ipsmap_tvBlack11"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_ico"
+            android:layout_width="16dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ipsmap_ico_down" />
+    </LinearLayout>
+
+    <include layout="@layout/ipsmap_recyclerview" />
+</LinearLayout>

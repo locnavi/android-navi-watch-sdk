@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/ipsmap_margin"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:background="@drawable/ipsmap_border_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/ipsmap_nav_msg"
+        android:textColor="@color/ipsmap_tvGrey3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_start"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/ipsmap_margin"
+            android:background="@drawable/ipsmap_border_grey14"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_start_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/ipsmap_tvBlue" />
+
+            <TextView
+                android:id="@+id/tv_start_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_start_floor"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:text="@string/ipsmap_choice_begine"
+                android:textColor="@color/ipsmap_tvBlue" />
+
+            <TextView
+                android:id="@+id/tv_start_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_start_name"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/ipsmap_tvGrey3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_target"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/rl_start"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="@dimen/ipsmap_margin"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ipsmap_border_grey14"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_target_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/ipsmap_tvGreen14" />
+
+            <TextView
+                android:id="@+id/tv_target_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_target_floor"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:text="@string/ipsmap_choice_stop"
+                android:textColor="@color/ipsmap_tvGreen14" />
+
+            <TextView
+                android:id="@+id/tv_target_building"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_target_name"
+                android:layout_marginLeft="3dp"
+                android:singleLine="true"
+                android:textSize="12sp"
+                android:text=""
+                android:textColor="@color/ipsmap_tvGrey3" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="12dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/ipsmap_navi_prepare_marker" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_multi_floor"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f4f4f6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_escalator"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/ipsmap_margin"
+                android:background="@drawable/ipsmap_border_black4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_escalator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ipsmap_escalator_disable" />
+
+                <TextView
+                    android:id="@+id/tv_escalator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/ipsmap_escalator"
+                    android:textColor="@color/ipsmap_tvGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_elevator"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/ipsmap_margin"
+                android:background="@drawable/ipsmap_border_black4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_elevator"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ipsmap_elevator_disable" />
+
+                <TextView
+                    android:id="@+id/tv_elevator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/ipsmap_elevator"
+                    android:textColor="@color/ipsmap_tvGrey" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_stair"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ipsmap_border_black4"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_stair"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ipsmap_stair_disable" />
+
+                <TextView
+                    android:id="@+id/tv_stair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/ipsmap_stairs"
+                    android:textColor="@color/ipsmap_tvGrey" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:background="#f8f8f8">
+        <TextView
+            android:id="@+id/tv_simulation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ipsmap_border_org3"
+            android:gravity="center"
+            android:text="@string/ipsmap_nav_sim"
+            android:textColor="@color/ipsmap_tvOrg1"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/tv_navigation"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ipsmap_btn_selector"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="@string/ipsmap_start_nav"
+            android:textColor="@color/ipsmap_white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

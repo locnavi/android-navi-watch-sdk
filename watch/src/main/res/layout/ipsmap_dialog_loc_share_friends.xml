@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_loc_share_friends"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ipsmap_border_white3"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    android:visibility="gone"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_line"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ipsmap_ico_u" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_group_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_marginTop="14dp"
+                    android:id="@+id/iv_group_number"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:src="@drawable/ipsmap_group_number" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_inLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/iv_group_number"
+                    android:textColor="#FF52C2B2"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/tv_outLine"
+                    android:layout_width="24.5dp"
+                    android:layout_height="26dp"
+                    android:layout_toRightOf="@+id/tv_inLine"
+                    android:textColor="@color/ipsmap_tvGrey"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginRight="30dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/tv_stop_share"
+                android:layout_width="74dp"
+                android:layout_height="26dp"
+                android:background="@drawable/ipsmap_border_org2"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/ipsmap_pause_share"
+                android:textColor="@color/ipsmap_tvOrg1"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/ipsmap_recyclerview" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:id="@+id/tv_group_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/ipsmap_group_id"
+            android:textColor="@color/ipsmap_tvGrey3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_group_"
+            android:textColor="@color/ipsmap_tvGreen"
+            android:textSize="24sp"
+            tools:text="123" />
+
+        <TextView
+            android:id="@+id/tv_quit"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/ipsmap_border_green2"
+            android:gravity="center"
+            android:text="@string/ipsmap_exit"
+            android:textColor="@color/ipsmap_tvGreen2"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/tv_quit"
+            android:background="@drawable/ipsmap_border_green3"
+            android:gravity="center"
+            android:text="@string/ipsmap_share_2"
+            android:textColor="@color/ipsmap_white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+</LinearLayout>

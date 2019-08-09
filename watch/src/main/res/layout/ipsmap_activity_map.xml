@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ipsmap_colorBackground">
+
+
+    <FrameLayout
+        android:id="@+id/fl_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_repunch_clock"
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="200dp">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:id="@+id/iv_repunch_clock"
+            android:clickable="true"
+            android:padding="0dp"
+            android:src="@drawable/ipsmap_repunch_clock"
+            />
+
+        <TextView
+            android:gravity="right|center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="重新打卡"
+            android:textColor="@color/ipsmap_color_blue_text"
+            />
+
+
+    </RelativeLayout>
+
+
+    <SeekBar
+        android:id="@+id/sbSimuSpeed"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:progress="50"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ipsmap_topbar">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:gravity="center"
+                android:shadowColor="#aaa"
+                android:shadowRadius="20"
+                android:textColor="@color/ipsmap_tvBlack2"
+                android:textSize="16sp"
+                tools:text="SSSSSSSS" />
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_centerVertical="true"
+                android:padding="12dp"
+                android:src="@drawable/ipsmap_nav_back_black" />
+
+            <ImageView
+                android:id="@+id/iv_footprint"
+                android:layout_width="43dp"
+                android:layout_height="43dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/ipsmap_footprint"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_title"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <include layout="@layout/ipsmap_include_search_bar" />
+
+            <TextView
+                android:id="@+id/tv_nogro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/ipsmap_experience"
+                android:textColor="@color/ipsmap_tvGrey5"
+                android:textSize="10sp"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_signal_strength"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/ipsmap_margin"
+                android:layout_marginRight="@dimen/ipsmap_margin"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ipsmap_border_black"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ipsmap_bluetooth_org" />
+
+                    <TextView
+                        android:id="@+id/tv_signal_strength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="@string/ipsmap_singnal_0"
+                        android:textColor="#FFFFBC4D"
+                        android:textSize="14sp" />
+
+
+                </FrameLayout>
+
+                <ImageView
+                    android:id="@+id/iv_close_signal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:padding="10dp"
+                    android:src="@drawable/ipsmap_icon_white_close" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+
+        android:id="@+id/iv_compass"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="140dp"
+        android:padding="6dp"
+        android:src="@drawable/ipsmap_ico_compass"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/iv_start_splash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/rl_top"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:padding="6dp"
+        android:src="@drawable/ipsmap_ico_compass"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_LSR"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:gravity="right"
+        android:visibility="visible">
+
+        <TextView
+
+            android:id="@+id/tv_debug_helper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:alpha="0.0"
+            android:background="@drawable/ipsmap_border_green4"
+            android:padding="10dp"
+            android:text="@string/ipsmap_debug_helper"
+            android:visibility="visible" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_set_param"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_select_content"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ipsmap_border_green4"
+                android:gravity="center"
+                android:text="@string/ipsmap_check_project" />
+
+            <EditText
+                android:id="@+id/et_param1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_margin="10dp"
+                android:background="@null"
+                android:hint="@string/ipsmap_input_param"
+                android:textColor="@color/ipsmap_btnDark"
+                android:textColorHint="@color/ipsmap_btnDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center"
+                    android:text="@string/ipsmap_total_time"
+                    android:textColor="@color/ipsmap_btnDark" />
+
+                <TextView
+                    android:id="@+id/tv_used_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/ipsmap_cost_time"
+                    android:textColor="@color/ipsmap_btnDark" />
+
+                <TextView
+                    android:id="@+id/tv_exite_debug"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/ipsmap_border_green4"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/ipsmap_exit" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sb_play_progress"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ipsmap_border_green4"
+                    android:gravity="center"
+                    android:text="@string/ipsmap_start" />
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ipsmap_border_green4"
+                    android:gravity="center"
+                    android:text="@string/ipsmap_restart" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_lock_center"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="@dimen/ipsmap_margin"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ipsmap_loc_lock_center1" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl_scale"
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@id/iv_lock_center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_lock_center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:gravity="center_horizontal"
+                android:padding="0dp"
+                android:text="@string/ipsmap_scale"
+                android:textColor="#4A4A4A"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="25dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/ipsmap_scale" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_back_position"
+            android:gravity="center"
+            android:layout_alignBottom="@id/iv_lock_center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_lock_center"
+            android:layout_width="100dp"
+            android:layout_height="35dp">
+
+            <ImageView
+                android:id="@+id/iv_back_position"
+                android:layout_width="100dp"
+                android:layout_height="45dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/ipsmap_back_position"
+                android:visibility="invisible"
+                />
+            <TextView
+                android:gravity="center_vertical|right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="12sp"
+                android:layout_marginRight="6dp"
+                android:text="@string/ipsmap_back_tolocation"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/ipsmap_white"
+                />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_lock_center"
+            android:layout_toRightOf="@+id/iv_lock_center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/ipsmap_ico_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@id/iv_lock_center"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:gravity="bottom"
+                android:text="@string/sdk_version_name"
+                android:textColor="@color/ipsmap_tvGrey"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_loc_share"
+            android:layout_width="67dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ipsmap_join"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/iv_zoom_out"
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ipsmap_zoom_out" />
+
+
+        <ImageView
+            android:id="@+id/iv_zoom_in"
+            android:layout_width="53dp"
+            android:layout_height="37dp"
+            android:layout_above="@+id/iv_zoom_out"
+            android:layout_alignRight="@id/iv_zoom_out"
+            android:paddingLeft="5dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ipsmap_zoom_in" />
+
+        <com.locnavi.watch.ui.widget.wheelview.WheelPicker
+            android:id="@+id/wheelPicker"
+            android:layout_width="45dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/iv_lock_center"
+            android:layout_marginLeft="@dimen/ipsmap_margin"
+            android:background="@drawable/ipsmap_ico_wheel_bg"
+            android:visibility="gone"
+            app:wheel_atmospheric="true"
+            app:wheel_curved="false"
+            app:wheel_cyclic="false"
+            app:wheel_item_align="center"
+            app:wheel_item_text_color="@color/ipsmap_tvGrey5"
+            app:wheel_item_text_size="18sp"
+            app:wheel_selected_item_text_color="@color/ipsmap_tvGreen5"
+            app:wheel_visible_item_count="5" />
+
+        <RelativeLayout
+            android:id="@+id/rl_punch_card"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/ipsmap_margin"
+            android:layout_above="@+id/wheelPicker"
+            android:layout_width="45dp"
+            android:layout_height="53dp">
+
+            <ImageView
+                android:id="@+id/iv_find_or_stop_car"
+                android:layout_width="45dp"
+                android:layout_height="53dp"
+                android:src="@drawable/ipsmap_stop_car" />
+
+            <TextView
+                android:id="@+id/tv_find_or_stop_car"
+                android:textSize="10sp"
+                android:layout_marginBottom="4dp"
+                android:textColor="@color/ipsmap_white"
+                android:gravity="center_horizontal|bottom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_signal_strength"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ipsmap_border_black3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="7dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/iv_blueth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ipsmap_bluetoothred_red"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_signal_notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/ipsmap_is_locationg"
+            android:textColor="#FFFFBC4D"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_close_noti"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/ipsmap_icon_white_close"
+            android:padding="20dp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_floor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/ipsmap_border_floor_black"
+        android:minWidth="100dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/ll_eye_location_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="7dp">
+
+            <ImageView
+                android:id="@+id/iv_eye_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ipsmap_eyes"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_watch_floor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_horizontal"
+                android:text=""
+                android:textColor="@color/ipsmap_white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_building"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/ipsmap_white"
+            android:textSize="18sp"
+            android:visibility="gone"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tv_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:textColor="@color/ipsmap_white"
+            android:textSize="40sp"
+            android:visibility="gone"
+            tools:text="" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/rl_share"
+        >
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_share"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ipsmap_loc_share_friend"
+        />
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ipsmap_visit_friends"
+            android:gravity="center"
+            android:textColor="@color/ipsmap_white"
+            />
+    </RelativeLayout>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/IpsmapAppTheme">
+
+        <include layout="@layout/ipsmap_dialog_region_search" />
+
+        <include layout="@layout/ipsmap_dialog_loc_share_friends" />
+
+        <include layout="@layout/ipsmap_dialog_my_location" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

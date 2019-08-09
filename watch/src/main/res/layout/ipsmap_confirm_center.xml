@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ipsmap_white"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:text="@string/ipsmap_confirm_region"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/btn_close"
+                android:src="@drawable/ipsmap_close" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_target_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:text="@string/ipsmap_destination"
+                android:textSize="15dp"
+                android:textColor="@color/ipsmap_tvGreen" />
+
+            <TextView
+                android:textSize="15dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/tv_start_region"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ipsmap_starting_point"
+                android:textColor="@color/ipsmap_tvGreen" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

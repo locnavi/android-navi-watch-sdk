@@ -1,0 +1,74 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="IpsmapAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ipsmap_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ipsmap_colorPrimaryDark</item>
+        <item name="colorAccent">@color/ipsmap_colorAccent</item>
+    </style>
+
+    <style name="IpsmapSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/ipsmap_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/ipsmap_white</item>
+        <item name="colorAccent">@color/ipsmap_colorAccent</item>
+        <item name="android:windowBackground">@drawable/ipsmap_im_splash</item>
+    </style>
+
+    <style name="IpsmapDialogBottom" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterAnimation">@anim/ipsmap_slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/ipsmap_slide_out_bottom</item>
+    </style>
+
+    <style name="IpsmapDialogTop" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowEnterAnimation">@anim/ipsmap_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/ipsmap_slide_out_top</item>
+    </style>
+
+    <style name="IpsmapVertifydialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@color/ipsmap_white</item>
+    </style>
+
+    <style name="IpsmapFiveRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ipsmap_five_rating_bar</item>
+        <item name="android:maxHeight">45dip</item>
+        <item name="android:maxWidth">45dip</item>
+    </style>
+
+    <style name="IpsmapDialogCommon" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="IpsmapDialogDimEnabled" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!--是否模糊-->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+</resources>

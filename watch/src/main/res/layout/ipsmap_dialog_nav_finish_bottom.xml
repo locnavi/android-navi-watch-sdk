@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/ipsmap_border_white2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="145.5dp"
+                android:layout_height="24dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="4dp"
+                android:text="@string/ipsmap_give_feedback"
+                android:textColor="#FF4A4A4A"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ipsmap_iv_close_update" />
+
+
+        </RelativeLayout>
+
+        <com.locnavi.watch.ui.widget.XJRatingBar
+            android:id="@+id/rc_rate"
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:rating="0"
+            app:dividerWidth="4dp"
+            app:starCount="5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/ipsmap_colorDivider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal">
+
+            <CheckBox
+                android:id="@+id/cv_checkBox1"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ipsmap_selector_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ipsmap_comment1"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cv_checkBox2"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ipsmap_selector_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ipsmap_comment2"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cv_checkBox3"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ipsmap_selector_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ipsmap_comment3"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/cv_checkBox4"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/ipsmap_selector_checkbox"
+                android:button="@null"
+                android:checked="false"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="@string/ipsmap_comment4"
+                android:textColor="#FF9B9B9B"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tv_content"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/ipsmap_border_grey11"
+                android:gravity="center_vertical"
+                android:hint="@string/ipsmap_advice"
+                android:paddingLeft="10dp"
+                android:textColor="@color/ipsmap_tvGrey3"
+                android:textColorHint="@color/ipsmap_borderGrey"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_upload"
+                android:layout_width="325dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/ipsmap_border_org1"
+                android:gravity="center"
+                android:text="@string/ipsmap_commit"
+                android:textColor="@color/ipsmap_white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/ipsmap_bg_shadow_big">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/ipsmap_margin"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/ipsmap_close2" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/ll_create"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/ipsmap_create_share"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_join"
+        android:gravity="center"
+        android:textColor="@color/ipsmap_tvGrey3"
+        android:textSize="16sp"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/ll_create"
+        android:layout_marginTop="@dimen/ipsmap_margin"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ipsmap_join_share" />
+</RelativeLayout>

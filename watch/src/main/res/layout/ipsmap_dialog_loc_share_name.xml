@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ipsmap_border_white2">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="7dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ipsmap_close2" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipsmap_input_name_or_id"
+        android:textColor="@color/ipsmap_tvGrey3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="@dimen/ipsmap_margin"
+        android:paddingRight="@dimen/ipsmap_margin"
+        android:hint=""
+        android:maxLength="10"
+        android:textSize="14sp"
+        android:textColor="@color/ipsmap_tvGrey3"
+        android:textColorHint="@color/ipsmap_tvGrey2"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ipsmap_border_grey" />
+
+    <TextView
+        android:id="@+id/tv_finish"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/et_name"
+        android:layout_marginBottom="20dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/ipsmap_yes"
+        android:textColor="@color/ipsmap_white"
+        android:textSize="16sp"
+        android:background="@drawable/ipsmap_border_green3" />
+
+</RelativeLayout>

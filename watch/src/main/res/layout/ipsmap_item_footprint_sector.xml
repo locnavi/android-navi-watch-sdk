@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        tools:text="ddd"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="#FFD693" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/ipsmap_dashed_line"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/tv_date"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="@dimen/ipsmap_margin"
+        android:layerType="software" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@drawable/ipsmap_dashed_line"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/tv_date"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layerType="software" />
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ipsmap_border_white2">
+
+    <LinearLayout
+        android:id="@+id/ll_verifyCompass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/ipsmap_colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/ipsmap_bg_canot_sacn"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:background="@drawable/ipsmap_iv_canot_scan"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/ipsmap_tvBlack"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/ipsmap_no_location2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_reload_blue_tooth"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_height="200dp">
+
+            <Button
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ipsmap_iv_start_blue_tooth"
+                android:clickable="false"
+                android:layout_width="127dp"
+                android:layout_height="127dp" />
+
+            <TextView
+                android:textColor="#FF9B9B9B"
+                android:textSize="18sp"
+                android:text="@string/ipsmap_click_relocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/ipsmap_btn_search_selector1"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipsmap_cancel" />
+    </LinearLayout>
+</RelativeLayout>

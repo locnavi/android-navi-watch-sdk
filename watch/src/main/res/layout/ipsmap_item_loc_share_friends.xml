@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/ipsmap_tvGrey7"
+        android:textSize="16sp"
+        tools:text="@string/ipsmap_tool_ha" />
+
+    <TextView
+        android:id="@+id/tv_floor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/ipsmap_tvOrg1"
+        android:textSize="14sp"
+        tools:text="@string/ipsmap_tool_floor4" />
+
+    <LinearLayout
+        android:id="@+id/ll_nav"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_nav"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ipsmap_ico_go_small" />
+
+        <TextView
+            android:id="@+id/tv_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/ipsmap_to_find"
+            android:textColor="@color/ipsmap_tvGreen4"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_updatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        tools:text="@string/ipsmap_tool_text4"
+        android:textColor="@color/ipsmap_tvGrey3"
+        android:textSize="14sp"
+        android:layout_toLeftOf="@+id/ll_nav" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ipsmap_colorDivider" />
+</RelativeLayout>

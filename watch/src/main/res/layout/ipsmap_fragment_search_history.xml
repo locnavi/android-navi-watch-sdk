@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ipsmap_tvGrey6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ipsmap_hot_search"
+        android:textSize="14sp"
+        android:textColor="@color/ipsmap_tvBlack5"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <com.locnavi.watch.ui.widget.TagContainerLayout
+        android:id="@+id/tagcontainerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layout_marginRight="@dimen/ipsmap_margin"
+        app:container_enable_drag="false"
+        app:tag_clickable="true"
+        app:tag_theme="none"
+        app:tag_background="@drawable/ipsmap_bg_shadow"
+        app:tag_text_size="15sp"
+        app:tag_text_color="@color/ipsmap_tvBlack5"
+        app:tag_border_color="@color/ipsmap_tvBlack4"
+        app:container_background_color="@color/ipsmap_tvGrey6"
+        app:container_border_color="@color/ipsmap_tvGrey6"
+        app:tag_background_color="@color/ipsmap_white"
+        app:tag_vertical_padding="10dp"
+        app:tag_horizontal_padding="12dp"
+        app:vertical_interval="12dp"
+        app:horizontal_interval="12dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/ipsmap_margin">
+
+        <TextView
+            android:id="@+id/tv_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipsmap_his_search"
+            android:textSize="14sp"
+            android:textColor="@color/ipsmap_tvBlack5"
+            android:layout_marginLeft="@dimen/ipsmap_margin" />
+
+        <TextView
+            android:id="@+id/tv_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipsmap_clear_his"
+            android:textSize="14sp"
+            android:textColor="@color/ipsmap_tvBlack5"
+            android:layout_marginRight="@dimen/ipsmap_margin"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/ipsmap_recyclerview" />
+</LinearLayout>

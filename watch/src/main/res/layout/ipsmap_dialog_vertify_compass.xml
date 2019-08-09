@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/ipsmap_border_white2">
+
+    <LinearLayout
+        android:id="@+id/ll_verifyCompass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:orientation="vertical">
+
+        <com.locnavi.watch.ui.widget.CompassView
+            android:id="@+id/compas_view"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@android:color/black"
+            app:paddingEnd="30dp"
+            app:radius="130dp"
+            app:short_dash="20dp"
+            app:long_dash="30dp"
+            app:text_size="20sp" />
+
+        <TextView
+            android:gravity="center"
+            android:textSize="20dp"
+
+            android:textColor="@color/ipsmap_whiteTranslucent4"
+            android:text="@string/ipsmap_vertify_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/bt_exit"
+            android:text="@string/ipsmap_exit"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:background="@color/ipsmap_whiteTranslucent4"
+            android:layout_width="100dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_activated="true">
+        <shape android:shape="oval">
+            <solid android:color="@color/ipsmap_colorPrimary" />
+            <size android:width="@dimen/ipsmap_indicator_size" android:height="@dimen/ipsmap_indicator_size" />
+        </shape>
+    </item>
+    <item android:state_activated="false">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <size android:width="@dimen/ipsmap_indicator_size" android:height="@dimen/ipsmap_indicator_size" />
+            <stroke android:width="0.5dp" android:color="@color/ipsmap_colorPrimary" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+            <size android:width="@dimen/ipsmap_indicator_size" android:height="@dimen/ipsmap_indicator_size" />
+            <stroke android:width="0.5dp" android:color="@color/ipsmap_colorPrimary" />
+        </shape>
+    </item>
+</selector>

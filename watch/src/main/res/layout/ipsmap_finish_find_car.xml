@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:background="@drawable/ipsmap_border_white"
+              >
+    <RelativeLayout
+        android:gravity="center_horizontal"
+        android:layout_width="268dp"
+        android:layout_height="398dp">
+
+        <ImageView
+            android:layout_width="268dp"
+            android:layout_height="398dp"
+            android:background="@drawable/ipsmap_bg_find_car"/>
+        
+        <ImageView
+            android:id="@+id/iv_close_find_car"
+            android:layout_alignParentRight="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ipsmap_close_find_car"
+            />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipsmap_cancle_service"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="278dp"
+                android:id="@+id/tv_confirm"
+                android:layout_width="160dp"
+                android:layout_height="34dp"
+                android:background="@drawable/ipsmap_border_org1"
+                android:gravity="center"
+                android:text="@string/ipsmap_confirm"
+                android:textColor="@color/ipsmap_white"/>
+
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/tv_cancle"
+                android:layout_width="160dp"
+                android:layout_height="34dp"
+                android:background="@drawable/ipsmap_border_org2"
+                android:gravity="center"
+                android:text="@string/ipsmap_cancel"
+                android:textColor="@color/ipsmap_tvOrg1"/>
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

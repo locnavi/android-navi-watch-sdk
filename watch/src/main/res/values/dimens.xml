@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="ipsmap_margin">16dp</dimen>
+    <dimen name="ipsmap_activity_horizontal_margin">16dp</dimen>
+    <dimen name="ipsmap_activity_vertical_margin">16dp</dimen>
+    <dimen name="ipsmap_indicator_size">6dp</dimen>
+    <dimen name="ipsmap_indicator_margin">6dp</dimen>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="43dp"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:background="@drawable/ipsmap_border_white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ipsmap_ico_search" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ipsmap_ico_voice" />
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="42dp"
+        android:layout_marginRight="55dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:hint="@string/ipsmap_destination"
+        android:textColor="@color/ipsmap_tvBlack3"
+        android:textColorHint="@color/ipsmap_tvGrey2"
+        android:textSize="14sp"
+        android:imeOptions="actionSearch"
+        android:background="@android:color/transparent" />
+</RelativeLayout>

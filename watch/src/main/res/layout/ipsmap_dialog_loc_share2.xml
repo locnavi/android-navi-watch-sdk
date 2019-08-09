@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:background="@color/ipsmap_blackTranslucent">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ipsmap_loc_share_close"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="59dp"
+        android:layout_height="20dp">
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="59dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ipsmap_loc_share_share"
+            />
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/ipsmap_visit"
+            android:textColor="@color/ipsmap_tvOrg2"
+            />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_people"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="@string/ipsmap_loc_share_people"
+        android:textColor="@color/ipsmap_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ipsmap_margin" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="@dimen/ipsmap_margin"
+        android:layout_marginRight="@dimen/ipsmap_margin"
+        android:clipToPadding="false"
+        android:layout_below="@id/tv_people"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

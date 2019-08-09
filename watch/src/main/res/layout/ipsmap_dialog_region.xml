@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ipsmap_margin"
+        android:background="@drawable/ipsmap_bg_shadow_big">
+
+        <TextView
+            android:id="@+id/tv_region_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginRight="120dp"
+            android:textColor="@color/ipsmap_tvGreen4"
+            android:textSize="16sp"
+            android:maxLines="2"
+            tools:text="@string/ipsmap_tool_neurology_department" />
+
+        <TextView
+            android:id="@+id/tv_floor_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_region_name"
+            android:layout_below="@id/tv_region_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:textColor="@color/ipsmap_tvGrey3"
+            android:textSize="16sp"
+            tools:text="@string/ipsmap_tool_floor3" />
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/tv_floor_name"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/ipsmap_colorDivider" />
+
+            <TextView
+                android:id="@+id/tv_send_loc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ipsmap_send_to_firend"
+                android:textColor="@color/ipsmap_tvGreen8"
+                android:gravity="center" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_nav"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/ipsmap_ico_go" />
+</RelativeLayout>

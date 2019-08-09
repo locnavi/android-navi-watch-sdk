@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_region_search"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:background="@drawable/ipsmap_border_white3"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="40dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:src="@drawable/ipsmap_ico_u" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipsmap_click_load_more"
+            android:textColor="@color/ipsmap_tvGrey"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <include layout="@layout/ipsmap_recyclerview" />
+</LinearLayout>

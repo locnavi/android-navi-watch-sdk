@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:layout_width="268dp"
+        android:layout_height="398dp"
+        android:background="@drawable/ipsmap_bg_find_car"
+
+        android:gravity="center_horizontal">
+
+        <!--<ImageView-->
+            <!--android:background="@drawable/ipsmap_bg_find_car"-->
+            <!--android:layout_width="268dp"-->
+            <!--android:layout_height="398dp"-->
+
+           <!--/>-->
+
+        <ImageView
+            android:id="@+id/iv_close_find_car"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ipsmap_close_find_car"
+            android:padding="20dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:gravity="center_horizontal"
+            android:text="@string/ipsmap_update_sucess"
+            android:textColor="#FFFFFFFF"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ll_find_car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="216dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_car_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text=""
+              />
+
+            <TextView
+                android:id="@+id/tv_car_resgion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text=""
+                android:textColor="#FFFFFFFF"
+                />
+
+            <TextView
+                android:id="@+id/tv_re_stop_car"
+                android:layout_width="100dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:background="@color/ipsmap_white"
+                android:gravity="center"
+                android:text="@string/ipsmap_update_location"
+                android:textColor="#FF4A4A4A"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_stop_car_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="21dp"
+                android:gravity="center"
+                android:text="@string/ipsmap_stop_car_time2"
+                android:textColor="#FFFFFFFF"
+                android:textSize="14sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:text="@string/ipsmap_stop_car_cost"
+                android:textColor="#FFFFFFFF"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

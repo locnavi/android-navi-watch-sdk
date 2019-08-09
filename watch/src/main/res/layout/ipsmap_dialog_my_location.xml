@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_my_loc"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:orientation="vertical"
+    android:layout_marginLeft="@dimen/ipsmap_margin"
+    android:layout_marginRight="@dimen/ipsmap_margin"
+    android:background="@drawable/ipsmap_border_white3"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="25dp"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    android:visibility="invisible">
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:src="@drawable/ipsmap_ico_u" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:gravity="center"
+        tools:text="@string/ipsmap_sleep"
+        android:textSize="14sp"
+        android:textColor="@color/ipsmap_tvGrey7"
+        android:layout_gravity="center_horizontal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/ipsmap_colorDivider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:id="@+id/v_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/ipsmap_colorDivider" />
+
+        <TextView
+            android:id="@+id/tv_send_my_loc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/v_line"
+            android:text="@string/ipsmap_send_my_location"
+            android:textSize="16sp"
+            android:textColor="@color/ipsmap_tvGreen8"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_loc_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/v_line"
+            android:text="@string/ipsmap_share_location"
+            android:textSize="16sp"
+            android:textColor="@color/ipsmap_tvGreen8"
+            android:gravity="center" />
+    </RelativeLayout>
+</LinearLayout>
